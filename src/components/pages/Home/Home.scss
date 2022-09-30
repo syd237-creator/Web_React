@@ -1,0 +1,70 @@
+@import "../../utils/theme";
+
+.banner{
+    height: 120px;
+    background-color: lighten($primaty_color, $amount: 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h3{
+        margin: 0;
+        color: white;
+    }
+    p{
+        margin: 10px 0;
+        color: rgba($color: white, $alpha: 0.5);
+    }
+    .searchBlog{
+        width: 100%;
+        input{
+            width: 100%;
+            max-width: 600px;
+            height: 30px;
+            display: block;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    }
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            width: 50px;
+            height: 30px;
+            border: 1px solid #e2e2e2;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1rem;
+        }
+        li.previous{
+            border-radius: 5px 0 0 5px;
+        }
+        li.next{
+            border-radius: 5px 0 0 5px;
+        }
+        li a{
+            text-decoration: none;
+            color: #337ab7;
+            font-size: 1rem;
+        }
+        li.selected a{
+            color: white;
+        }
+        li.selected{
+            background-color: #337ab7;
+        }
+        li a:hover,
+        li a.selected{
+            color: blue;
+        }
+    }
+}
+

@@ -1,0 +1,21 @@
+.blogList p{
+    width: 100%;
+    word-wrap: break-word;
+}
+.singleBlog{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    word-wrap: break-word;
+    .cover-main{
+        display: block;
+        width: 50%;
+        position: relative;
+    }
+}
+.blogListComment{
+    display: block;
+    margin: 10px;
+    width: 70%;
+
+}
